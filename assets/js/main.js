@@ -401,16 +401,16 @@ window.addEventListener('load', () => {
   window.addEventListener('scroll', animateOnScroll);
 });
 
-///function animateOnScroll() {
-//  const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
+function animateOnScroll() {
+  const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
 
 // ──── tambahan   
-//.fade-in,
-//.slide-up {
-//  opacity: 0;
-//  transform: translateY(30px); /* pastikan ini ada */
-//  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); /* easeOutExpo-like */
-//}
+.fade-in,
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px); /* pastikan ini ada */
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); /* easeOutExpo-like */
+}
 // ──── end tambahan
   
   elements.forEach(el => {

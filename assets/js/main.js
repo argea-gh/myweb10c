@@ -1,4 +1,4 @@
-// ──-───────────────────────────────────────
+// ──────────────────────────────────────────
 // DOM Elements
 // ──────────────────────────────────────────
 
@@ -377,41 +377,9 @@ if (typeof loadCart === 'function') {
 // ──────────────────────────────────────────
 // ANIMASI ENTRANCE ON SCROLL
 // ──────────────────────────────────────────
-// --- Edit robust 
-function animateOnScroll() {
-  const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
-  
-  elements.forEach(el => {
-    // Hanya jalankan jika belum terlihat
-    if (el.classList.contains('visible')) return;
-
-    const rect = el.getBoundingClientRect();
-    // Munculkan jika elemen sudah 80% masuk viewport
-    const isVisible = rect.top < window.innerHeight * 0.9 && rect.bottom > 0;
-    
-    if (isVisible) {
-      el.classList.add('visible');
-    }
-  });
-}
-
-// Jalankan saat SEMUA aset selesai (termasuk gambar)
-window.addEventListener('load', () => {
-  animateOnScroll(); // langsung cek saat load
-  window.addEventListener('scroll', animateOnScroll);
-});
 
 function animateOnScroll() {
   const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
-
-// ──── tambahan   
-.fade-in,
-.slide-up {
-  opacity: 0;
-  transform: translateY(30px); /* pastikan ini ada */
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); /* easeOutExpo-like */
-}
-// ──── end tambahan
   
   elements.forEach(el => {
     const elementTop = el.getBoundingClientRect().top;

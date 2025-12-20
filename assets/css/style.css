@@ -923,7 +923,7 @@ body {
 @media (max-width: 480px) {
   .hero-headline { font-size: 1.8rem; }
   .section-title { font-size: 1.6rem; }
-  .hero { padding: 60px 0; }
+  .hero { padding: 40px 0; }
 }
 
 /* ────────── Update Multipage ────────────── */

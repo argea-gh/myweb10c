@@ -133,6 +133,17 @@ body {
   object-fit: contain;
 }
 
+/* Header: logo + judul tanpa underline */
+.header .logo,
+.header .logo .site-title {
+  text-decoration: none;
+}
+
+.header .logo:hover,
+.header .logo .site-title:hover {
+  text-decoration: none;
+}
+
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -928,7 +939,7 @@ body {
 }
 
 /* Mobile: tampilkan di bawah logo */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
     gap: 8px;
@@ -938,7 +949,7 @@ body {
     margin-left: 0;
     font-size: 1.4rem;
   }
-}
+} */
 
 /* ────────────────────────────────────────── */
 /* SCROLL TO TOP BUTTON */

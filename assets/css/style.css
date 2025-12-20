@@ -91,6 +91,7 @@ body {
 }
 
 .btn-whatsapp {
+  width:fit-content;
   color: var(--white);
   background-color: #25d366;
   padding: 10px 20px;

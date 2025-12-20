@@ -125,7 +125,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0; /* 16 */
+  padding: 16px 0;
 }
 
 .logo img {
@@ -167,24 +167,13 @@ body {
   transition: var(--transition);
 }
 
-/* ─ Hilangkan garis link - */
-.header .logo,
-.header .logo .site-title {
-  text-decoration: none !important;
-}
-
-.header .logo:hover,
-.header .logo .site-title:hover {
-  text-decoration: none !important;
-}
-
 /* ────────────────────────────────────────── */
 /* HERO */
 /* ────────────────────────────────────────── */
 
 .hero {
   background: linear-gradient(135deg, #f0f9f1 0%, #e8f5e9 100%);
-  padding: 40px 0; /* 100 */
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -867,8 +856,7 @@ body {
 @media (max-width: 768px) {
   .hero-headline { font-size: 2.2rem; }
   .hero-subheadline { font-size: 1.1rem; }
-  .hero { padding: 25px 0; } /* 60 */
-    
+  
   .section { padding: 40px 0; }
   .section-title { font-size: 1.8rem; }
 
@@ -924,7 +912,7 @@ body {
 @media (max-width: 480px) {
   .hero-headline { font-size: 1.8rem; }
   .section-title { font-size: 1.6rem; }
-  .hero { padding: 25px 0; } /* 60 */
+  .hero { padding: 60px 0; }
 }
 
 /* ────────── Update Multipage ────────────── */
@@ -940,7 +928,7 @@ body {
 }
 
 /* Mobile: tampilkan di bawah logo */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
     gap: 8px;
@@ -950,7 +938,7 @@ body {
     margin-left: 0;
     font-size: 1.4rem;
   }
-}  */
+}
 
 /* ────────────────────────────────────────── */
 /* SCROLL TO TOP BUTTON */
@@ -1024,12 +1012,10 @@ body {
   transform: translateY(0) translateX(0);
 }
 
-/* Stagger delay untuk grid */
+/* Delay bertingkat untuk grid */
 .stagger-item:nth-child(1) { transition-delay: 0.1s; }
 .stagger-item:nth-child(2) { transition-delay: 0.2s; }
 .stagger-item:nth-child(3) { transition-delay: 0.3s; }
 .stagger-item:nth-child(4) { transition-delay: 0.4s; }
 .stagger-item:nth-child(5) { transition-delay: 0.5s; }
 .stagger-item:nth-child(6) { transition-delay: 0.6s; }
-.stagger-item:nth-child(7) { transition-delay: 0.7s; }
-.stagger-item:nth-child(8) { transition-delay: 0.8s; }

@@ -338,7 +338,7 @@ body {
 .badge-top {
   position: absolute;
   top: auto; /* top: 16px; */
-  left: 85px; /* left: 50%; */
+  left: 10px; /* left: 50%; */
   bottom: 168px;
   /* transform: translateX(-50%); */
   background: var(--gold);

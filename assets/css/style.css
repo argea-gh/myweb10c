@@ -57,8 +57,10 @@ body {
 }
 
 .btn {
+  margin: auto;
+  width: fit-content;
   display: inline-block;
-  padding: 12px 28px;
+  padding: 6px 10px;
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
@@ -288,6 +290,7 @@ body {
 }
 
 .trust-card {
+  align-items: start;
   text-align: center;
   padding: 30px 20px;
   background: var(--white);
@@ -375,7 +378,7 @@ body {
 /* ────────────────────────────────────────── */
 
 .all-products {
-  background-color: var(--gray-bg);
+  background-color: #e3f6dd; /* var(--gray-bg); */
 }
 
 .section-header {
@@ -410,8 +413,9 @@ body {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
 }
 
 .product-card {
@@ -476,8 +480,9 @@ body {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  /* ─ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); -- */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
   margin-top: 40px;
 }
 
@@ -516,12 +521,12 @@ body {
   background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-dark) 100%);
   color: var(--white);
   text-align: center;
-  padding: 80px 0;
+  padding: 60px 0; /* 80 */
 }
 
 .cta-headline {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem; /* 2.4 */
+  font-weight: 600; /* 700 */
   margin-bottom: 16px;
 }
 
@@ -534,8 +539,8 @@ body {
 .cta-btn {
   background-color: var(--gold);
   color: var(--text-dark);
-  padding: 14px 40px;
-  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 .cta-btn:hover {
@@ -590,6 +595,9 @@ body {
 }
 
 .cert-badges {
+  width: fit-content;
+  padding: 10px;
+  background-color: azure;
   display: flex;
   gap: 12px;
   margin-top: 12px;
@@ -628,7 +636,7 @@ body {
   border-radius: 50px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  font-size: 28px;
+  font-size: 42px; /* 28 */
   text-decoration: none;
   z-index: 999;
   display: flex;

@@ -324,6 +324,7 @@ body {
 }
 
 .product-card.recommended {
+  margin-bottom: 20px;
   background: var(--white);
   border-radius: var(--radius);
   overflow: hidden;
@@ -479,9 +480,9 @@ body {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* 280 */
+  gap: 18px; /* 24 */
+  margin-top: 30px; /* 40 */
 }
 
 .testimonial-card {
@@ -519,12 +520,12 @@ body {
   background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-dark) 100%);
   color: var(--white);
   text-align: center;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .cta-headline {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 
@@ -537,8 +538,8 @@ body {
 .cta-btn {
   background-color: var(--gold);
   color: var(--text-dark);
-  padding: 14px 40px;
-  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 .cta-btn:hover {
@@ -599,6 +600,7 @@ body {
 }
 
 .cert-badge {
+  background-color: azure;
   height: 40px;
   filter: grayscale(100%) brightness(1.2);
   transition: var(--transition);
@@ -619,7 +621,6 @@ body {
 /* ────────────────────────────────────────── */
 /* FLOATING WHATSAPP */
 /* ────────────────────────────────────────── */
-
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -631,7 +632,7 @@ body {
   border-radius: 50px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  font-size: 28px;
+  font-size: 42px; /* 28 */
   text-decoration: none;
   z-index: 999;
   display: flex;
